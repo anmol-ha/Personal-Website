@@ -1,0 +1,203 @@
+/* --------------------- For all ------------------------------- */
+body {
+    background-color: #1C4648;
+    margin: 0px;
+    height: 100vh;
+}
+
+/* ----------------------------- For header ----------------------- */
+.flex-container-header {
+    background-color: #053033;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.flex-item-header-left {
+    padding: 0;
+    align-self: center;
+    margin: 10px;
+}
+.flex-item-header-right {
+    margin: 20px;
+    flex-wrap: wrap;
+    margin-right: 30px;
+}
+.header-element {
+    margin-left: 15px;
+    color: white;
+    text-decoration: none;
+}
+#web-title {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    font-family: cormorantgaramond-light, cormorantgaramond, cormorant garamond, serif;
+    margin-left: 10px;
+    color:#DFF09D;
+}
+.flex-container-header a {
+    color: white;
+}
+.flex-container-header a:hover {
+    color: #DFF09D;
+}   
+
+/* ------------------------------- For Hero ---------------------------- */
+.hero-image-segment {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.hero-image {
+    height: 80%;
+    overflow-x: hidden;
+}
+.hero-text {
+    position: absolute;
+    align-self: flex-end;
+}
+.hero-text > p {
+    font-family: cormorantgaramond-light, cormorantgaramond, cormorant garamond, serif;
+    color: #DFF09D;
+    font-size: 4.5rem;
+    letter-spacing: 0em;
+    font-style: oblique;
+    text-shadow: 1px 1.5px #053033;
+}
+
+/* ------------------------------For Bio-------------------------------- */
+.flex-container-bio {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+.profile-image > img {
+    border-radius: 50%;
+}
+.profile-bio {
+    color: white;
+    margin: 50px;
+    font-size: 1.25rem;
+}
+#current-role {
+    font-weight: bold;
+    color:#DFF09D;
+}
+p a {
+    color: white;
+}
+/* ---------------------------------- For Featured -------------------------------- */
+.features-heading {
+    margin-top: 20px;
+    background-color: #DFF09D;
+    border-top: solid 2px #1C4648;
+    border-radius: 5%;
+} 
+.features-heading > h2 {
+    font-family: cormorantgaramond-light, cormorantgaramond, cormorant garamond, serif;
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+}
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(2, minmax(380px, 1fr));
+    grid-template-columns: repeat(2, minmax(250px, 0.3fr));
+    grid-gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    padding-bottom: 100px;
+}
+.grid-item {
+    background-color: white;
+
+}
+.grid-item img {
+    min-width: 250px;
+    width: 100%;
+}
+.grid-row {
+    background-color: white;
+}
+.grid-item a {
+    color:#053033;
+
+    text-decoration: underline;
+}
+.grid-item a:hover {
+    color: #1e7c83;
+}
+.grid-item h3 {
+    margin: 10px 15px;
+}
+
+/* ---------------------------------- For Contact ----------------------------------- */
+.flex-container-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 30px;
+    background-color: #DFF09D;
+}
+.flex-container-contact p {
+    font-family: cormorantgaramond-light, cormorantgaramond, cormorant garamond, serif;
+    font-size: 1.35rem;
+    font-weight: bolder;
+    text-decoration: none;
+    margin: 0px;
+
+}
+.flex-container-contact img {
+    margin-right: 40px;
+    border: 1px solid #DFF09D
+}
+
+/* --------------------------------- For Footer ----------------------------------- */
+footer {
+    background-color: #053033;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: white;
+    text-align: center;    
+}
+
+
+
+@media (max-width: 800px) {
+    .hero-text > p {
+        font-size: 2.5rem;
+        margin: 10px;
+    }
+    #web-title {
+        margin-left: 2px;
+    }
+    .flex-container-bio {
+        margin: 0px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+    .flex-container-contact {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .flex-container-contact p {
+        margin: 0px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
